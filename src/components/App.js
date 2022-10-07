@@ -30,10 +30,10 @@ const App = () => {
         <option value={2021}>2021</option>
         <option value={2022}>2022</option>
       </select>
-      <div id="year_selected">
+      <div id="selected-year">
         {selectedOption === null
-          ? "Please select Year"
-          : "Selected Year -" + selectedOption}
+          ? "No year selected"
+          : "Selected year-" + selectedOption}
       </div>
       {selectedOption === null ? null : (
         <ul>
